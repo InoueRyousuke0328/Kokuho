@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/* ========================================
+   国宝：特別評価エラーページ
+======================================== */
+
+.kokuho-error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: calc(100vh - 140px);
+    padding: 60px 24px;
+    box-sizing: border-box;
+
+    /* 国宝ページ全体を明朝体にする */
+    font-family:
+        "Yu Mincho",
+        "YuMincho",
+        "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro",
+        "Noto Serif JP",
+        serif;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(120, 0, 8, 0.22),
+            transparent 48%
+        ),
+        #080808;
+}
+
+
+/* カード */
+.kokuho-error-card {
+    position: relative;
+
+    width: min(100%, 760px);
+    padding: 2px;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #8f5e08 0%,
+        #ffe18a 25%,
+        #8d5905 48%,
+        #f4ce68 74%,
+        #744504 100%
+    );
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.65),
+        0 0 35px rgba(199, 143, 25, 0.12);
+}
+
+
+/* カード内側 */
+.kokuho-error-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 52px 60px 42px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(189, 135, 25, 0.13),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            #1b1710 0%,
+            #090909 48%,
+            #160d0d 100%
+        );
+
+    border-radius: 12px;
+}
+
+
+/* 上部の英字 */
+.kokuho-error-subtitle {
+    margin: 0 0 18px;
+
+    color: #b99546;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+
+/* 星アイコン */
+.kokuho-error-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+
+    color: #ffd968;
+    font-size: 25px;
+
+    background: rgba(190, 137, 28, 0.09);
+    border: 1px solid rgba(230, 187, 79, 0.58);
+    border-radius: 50%;
+
+    box-shadow:
+        inset 0 0 15px rgba(255, 211, 89, 0.08),
+        0 0 18px rgba(255, 193, 7, 0.12);
+}
+
+
+/* 見出し */
+.kokuho-error-title {
+    margin: 0 0 28px;
+
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 38px);
+    letter-spacing: 0.08em;
+}
+
+
+/* 導入文 */
+.kokuho-error-lead {
+    margin: 0 0 8px;
+
+    color: #dedede;
+    font-size: 16px;
+}
+
+
+/* 作品名 */
+.kokuho-movie-title {
+    margin: 0 0 26px;
+
+    color: #f1ca61;
+    font-family: serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+    text-shadow:
+        0 0 18px rgba(228, 177, 57, 0.25);
+}
+
+
+/* メッセージ枠 */
+.kokuho-message-area {
+    margin: 0 auto 28px;
+    padding: 22px 28px;
+
+    background-color: rgba(255, 255, 255, 0.025);
+    border-top: 1px solid rgba(218, 178, 76, 0.27);
+    border-bottom: 1px solid rgba(218, 178, 76, 0.27);
+}
+
+
+/* メッセージ */
+.kokuho-error-message {
+    margin: 0;
+
+    color: #dddddd;
+    font-size: 15px;
+    line-height: 2;
+
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.kokuho-error-message + .kokuho-error-message {
+    margin-top: 8px;
+}
+
+
+/* 星5表示 */
+.kokuho-rating-preview {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+
+    margin: 0 0 28px;
+
+    color: #ffc400;
+    font-size: 29px;
+    line-height: 1;
+
+    text-shadow:
+        0 0 9px rgba(255, 193, 7, 0.38);
+}
+
+
+/* フォーム */
+.kokuho-rating-form {
+    width: min(100%, 440px);
+    margin: 0 auto;
+}
+
+
+/* 投稿ボタン */
+.kokuho-rating-button {
+    width: 100%;
+    min-height: 54px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+
+    color: #15100a;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+
+    background: linear-gradient(
+        135deg,
+        #9f6908 0%,
+        #f3ce65 27%,
+        #ffe695 50%,
+        #d59b20 75%,
+        #8d5705 100%
+    );
+
+    border: 1px solid #ffe9a4;
+    border-radius: 7px;
+    cursor: pointer;
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.45),
+        0 5px 18px rgba(180, 119, 9, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.kokuho-rating-button:hover {
+    filter: brightness(1.1);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.5),
+        0 8px 25px rgba(218, 158, 32, 0.32);
+
+    transform: translateY(-2px);
+}
+
+.kokuho-rating-button:focus-visible {
+    outline: 2px solid #ffe38a;
+    outline-offset: 4px;
+}
+
+
+/* 最下部 */
+.kokuho-error-note {
+    margin: 26px 0 0;
+
+    color: #806e47;
+    font-family: serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+}
+
+
+/* 左右の赤い装飾 */
+.kokuho-decoration {
+    position: absolute;
+    top: -35%;
+    z-index: 1;
+
+    width: 90px;
+    height: 180%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(135, 0, 8, 0.13),
+        transparent
+    );
+
+    transform: rotate(18deg);
+}
+
+.kokuho-decoration-left {
+    left: 40px;
+}
+
+.kokuho-decoration-right {
+    right: 40px;
+}
+
+
+/* スマートフォン */
+@media (max-width: 600px) {
+
+    .kokuho-error-page {
+        padding: 35px 15px;
+    }
+
+    .kokuho-error-content {
+        padding: 38px 20px 30px;
+    }
+
+    .kokuho-message-area {
+        padding: 18px 14px;
+    }
+
+    .kokuho-error-message br {
+        display: none;
+    }
+
+    .kokuho-rating-preview {
+        font-size: 25px;
+    }
+}
+.kokuho-rating-button {
+    font-family:
+        "Yu Mincho",
+        "YuMincho",
+        "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro",
+        "Noto Serif JP",
+        serif;
+}
+.kokuho-movie-title {
+    font-family:
+        "Yu Mincho",
+        "YuMincho",
+        "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro",
+        serif;
+
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}

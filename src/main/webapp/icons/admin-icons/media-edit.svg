@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 72 72"
+     fill="none"
+     stroke="#2f80ff"
+     stroke-width="3"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- 作品情報の書類 -->
+    <path d="M14 9H43L55 21V59
+             C55 62 53 64 50 64H14
+             C11 64 9 62 9 59V14
+             C9 11 11 9 14 9Z"/>
+
+    <path d="M43 9V21H55"/>
+
+    <path d="M18 29H39"/>
+    <path d="M18 38H34"/>
+
+    <!-- 編集用の鉛筆 -->
+    <path d="M32 55L36 45L55 26L63 34L44 53Z"
+          fill="#12233a"/>
+
+    <path d="M55 26L63 34"/>
+    <path d="M36 45L44 53"/>
+    <path d="M32 55L44 53"/>
+
+</svg>

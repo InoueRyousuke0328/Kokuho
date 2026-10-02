@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 72 72"
+     fill="none"
+     stroke="#2f80ff"
+     stroke-width="3"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- 人物 -->
+    <circle cx="28" cy="21" r="10"/>
+
+    <path d="M10 55
+             C10 43 18 36 28 36
+             C38 36 46 43 46 55"/>
+
+    <path d="M10 55H46"/>
+
+    <!-- 追加マーク -->
+    <circle cx="52" cy="48" r="11" fill="#12233a"/>
+    <path d="M52 43V53"/>
+    <path d="M47 48H57"/>
+
+</svg>

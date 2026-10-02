@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/* 管理者メニュー画面 */
+.admin-menu-page {
+    min-height: calc(100vh - 80px);
+    padding: 45px 20px 60px;
+    box-sizing: border-box;
+
+    color: #ffffff;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(8, 101, 232, 0.12),
+            transparent 55%
+        ),
+        #081426;
+}
+
+/* ページ見出し */
+.admin-menu-heading {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.admin-menu-title {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.admin-menu-subtitle {
+    margin: 0;
+    color: #aeb9c8;
+    font-size: 17px;
+}
+
+/* カードを縦一列に並べる */
+.admin-menu-list {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 管理メニューのカード */
+.admin-menu-card {
+    width: 100%;
+    min-height: 115px;
+    padding: 22px 30px;
+    box-sizing: border-box;
+
+    display: grid;
+   grid-template-columns: 80px minmax(0, 1fr) 230px;
+    align-items: center;
+    gap: 24px;
+
+    background-color: #12233a;
+    border: 1px solid #35465d;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* カードにマウスを重ねたとき */
+.admin-menu-card:hover {
+    transform: translateY(-3px);
+    border-color: #0865e8;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3),
+        0 0 18px rgba(8, 101, 232, 0.15);
+}
+
+/* アイコンは後から追加 */
+.admin-menu-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* カード内の文章 */
+.admin-menu-content {
+    min-width: 0;
+}
+
+.admin-menu-content h2 {
+    margin: 0 0 9px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.admin-menu-content p {
+    margin: 0;
+    color: #b9c4d3;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* 通常の青いボタン */
+.admin-menu-button {
+    width: 230px;
+    min-height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: #0865e8;
+    border: 1px solid #0865e8;
+    border-radius: 6px;
+
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.admin-menu-button:hover {
+    background-color: #247cf4;
+
+    box-shadow:
+        0 0 16px rgba(8, 101, 232, 0.35);
+}
+
+/* アカウント削除カード */
+.admin-menu-card-danger {
+    border-color: #7a3038;
+}
+
+.admin-menu-card-danger:hover {
+    border-color: #e23b46;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3),
+        0 0 18px rgba(226, 59, 70, 0.15);
+}
+
+/* アカウント削除ボタン */
+.admin-danger-button {
+    color: #ff5964;
+    background-color: transparent;
+    border-color: #e23b46;
+}
+
+.admin-danger-button:hover {
+    color: #ffffff;
+    background-color: #d92f3a;
+
+    box-shadow:
+        0 0 16px rgba(226, 59, 70, 0.3);
+}
+
+/* 画面が狭い場合 */
+@media (max-width: 760px) {
+
+    .admin-menu-page {
+        padding: 35px 15px 50px;
+    }
+
+    .admin-menu-title {
+        font-size: 30px;
+    }
+
+    .admin-menu-card {
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .admin-menu-content {
+        text-align: center;
+    }
+
+    .admin-menu-button {
+        width: 100%;
+    }
+}
+.admin-menu-icon {
+    grid-column: 1;
+    justify-self: center;
+
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.admin-menu-content {
+    grid-column: 2;
+    min-width: 0;
+}
+
+.admin-menu-button {
+    grid-column: 3;
+    justify-self: end;
+}

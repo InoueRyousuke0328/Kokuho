@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* 検索エリアの背景 */
+.search-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 130px;
+    padding: 35px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #080808,
+            #210707,
+            #080808
+        );
+}
+
+/* 検索フォーム */
+.movie-search-form {
+    display: flex;
+    width: min(700px, 90%);
+}
+
+/* 検索入力欄 */
+.movie-search-input {
+    flex: 1;
+    height: 50px;
+    padding: 0 18px;
+
+    border: none;
+    border-radius: 4px 0 0 4px;
+
+    background-color: white;
+    color: #222;
+    font-size: 15px;
+}
+
+.movie-search-input:focus {
+    outline: 2px solid #e50914;
+    outline-offset: -2px;
+}
+
+/* 検索ボタン */
+.movie-search-button {
+    width: 110px;
+    height: 50px;
+
+    border: none;
+    border-radius: 0 4px 4px 0;
+
+    background-color: #b20710;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.movie-search-button:hover {
+    background-color: #e50914;
+}
+
+/* 入力項目のまとまり */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* 項目名 */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+/* Chrome・Edgeの自動入力時の背景色 */
+.account-input:-webkit-autofill,
+.account-input:-webkit-autofill:hover,
+.account-input:-webkit-autofill:focus,
+.account-input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff !important;
+
+    -webkit-box-shadow:
+        0 0 0 1000px #202020 inset !important;
+
+    box-shadow:
+        0 0 0 1000px #202020 inset !important;
+
+    caret-color: #ffffff;
+    border: 1px solid #444;
+
+    transition:
+        background-color 9999s ease-out 0s;
+}
+.account-input:-webkit-autofill:focus {
+    border-color: #e50914;
+    outline: none;
+}
+
+/* 入力欄 */
+.account-input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+
+    border: 1px solid #444;
+    border-radius: 5px;
+
+    background-color: #202020;
+    color: white;
+    font-size: 15px;
+}
+
+.account-input::placeholder {
+    color: #999;
+}
+
+.account-input:focus {
+    border-color: #e50914;
+    outline: none;
+}
+
+/* 登録・確認ボタン */
+.account-button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account-button:hover {
+    background-color: #b20710;
+}
+
+.form-help {
+    display: block;
+    margin-top: 8px;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.back-form {
+    margin-top: 15px;
+}
+
+.back-button {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+
+    border: 1px solid #666;
+    border-radius: 5px;
+
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    border-color: white;
+    background-color: #2a2a2a;
+}
+
+/* パスワード表示チェック */
+.password-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 10px;
+
+    color: #cccccc;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.password-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #e50914;
+    cursor: pointer;
+}

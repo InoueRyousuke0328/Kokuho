@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/* 管理者ログアウト確認画面 */
+.admin-logout-page {
+    min-height: calc(100vh - 80px);
+    padding: 80px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: #081426;
+    color: #ffffff;
+}
+
+.admin-logout-card {
+    width: 100%;
+    max-width: 520px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    text-align: center;
+    background-color: #12233a;
+    border: 1px solid #35465d;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.admin-logout-title {
+    margin: 0 0 25px;
+    font-size: 30px;
+}
+
+.admin-logout-message {
+    margin: 0 0 35px;
+    color: #c6cfdb;
+    font-size: 17px;
+}
+
+.admin-logout-button {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    box-sizing: border-box;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #0865e8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 削除するアカウント種類の選択画面 */
+.admin-account-select-page {
+    min-height: calc(100vh - 80px);
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #081426;
+    color: #ffffff;
+}
+
+.admin-account-select-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 45px;
+    box-sizing: border-box;
+    background-color: #12233a;
+    border: 1px solid #35465d;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.admin-account-select-title {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.admin-account-select-message {
+    margin: 0 0 30px;
+    text-align: center;
+    color: #c6cfdb;
+    line-height: 1.7;
+}
+
+.admin-account-type-list {
+    margin-bottom: 25px;
+    border: 1px solid #35465d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-account-type-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #35465d;
+}
+
+.admin-account-type-item:last-child {
+    border-bottom: none;
+}
+
+.admin-account-type-item:hover {
+    background-color: #1a304c;
+}
+
+.admin-account-type-item input {
+    accent-color: #0865e8;
+}
+
+.admin-account-next-button {
+    width: 100%;
+    padding: 14px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0865e8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-account-next-button:hover {
+    background-color: #247cf4;
+}
+
+.admin-account-back-form {
+    margin-top: 12px;
+}
+
+.admin-account-back-button {
+    width: 100%;
+    padding: 13px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #53657c;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-account-back-button:hover {
+    background-color: #1a304c;
+}
+
+@media (max-width: 600px) {
+    .admin-account-select-card {
+        padding: 35px 25px;
+    }
+}
+/* アカウント一覧・削除対象選択画面 */
+.admin-account-list-page {
+    min-height: calc(100vh - 80px);
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #081426;
+    color: #ffffff;
+}
+
+.admin-account-list-card {
+    width: 100%;
+    max-width: 750px;
+    padding: 45px;
+    box-sizing: border-box;
+    background-color: #12233a;
+    border: 1px solid #35465d;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.admin-account-list-title {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.admin-account-list-message {
+    margin: 0 0 30px;
+    text-align: center;
+    color: #c6cfdb;
+}
+
+.admin-account-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-account-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #35465d;
+}
+
+.admin-account-table th,
+.admin-account-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #35465d;
+}
+
+.admin-account-table th {
+    color: #c6cfdb;
+    background-color: #0d1b2e;
+}
+
+.admin-account-table tbody tr:hover {
+    background-color: #1a304c;
+}
+
+.admin-account-operation {
+    width: 100px;
+    text-align: center !important;
+}
+
+.admin-account-operation form {
+    margin: 0;
+}
+
+.admin-account-delete-button {
+    padding: 9px 22px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-account-delete-button:hover {
+    background-color: #c82333;
+}
+
+.admin-account-empty-message {
+    padding: 25px;
+    text-align: center;
+    color: #c6cfdb;
+    border: 1px solid #35465d;
+    border-radius: 8px;
+}
+
+.admin-account-list-back-form {
+    margin-top: 25px;
+}
+
+.admin-account-list-back-button {
+    width: 100%;
+    padding: 13px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #53657c;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-account-list-back-button:hover {
+    background-color: #1a304c;
+}
+
+@media (max-width: 600px) {
+    .admin-account-list-card {
+        padding: 35px 20px;
+    }
+
+    .admin-account-table th,
+    .admin-account-table td {
+        padding: 13px 10px;
+    }
+}
+/* 管理者・利用者アカウント削除確認画面 */
+.admin-account-confirm-page {
+    min-height: calc(100vh - 80px);
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #081426;
+    color: #ffffff;
+}
+
+.admin-account-confirm-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 45px;
+    box-sizing: border-box;
+    background-color: #12233a;
+    border: 1px solid #35465d;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.admin-account-confirm-title {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.admin-account-confirm-message {
+    margin: 0 0 30px;
+    text-align: center;
+    color: #c6cfdb;
+    line-height: 1.7;
+}
+
+.admin-account-confirm-content {
+    margin-bottom: 30px;
+    border: 1px solid #35465d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-account-confirm-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.admin-account-confirm-label,
+.admin-account-confirm-value {
+    padding: 18px;
+}
+
+.admin-account-confirm-label {
+    color: #aeb9c8;
+    background-color: #0d1b2e;
+}
+
+.admin-account-confirm-value {
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.admin-account-confirm-delete-button {
+    width: 100%;
+    padding: 14px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-account-confirm-delete-button:hover {
+    background-color: #c82333;
+}
+
+.admin-account-confirm-back-form {
+    margin-top: 12px;
+}
+
+.admin-account-confirm-back-button {
+    width: 100%;
+    padding: 13px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #53657c;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-account-confirm-back-button:hover {
+    background-color: #1a304c;
+}
+
+@media (max-width: 600px) {
+    .admin-account-confirm-card {
+        padding: 35px 25px;
+    }
+
+    .admin-account-confirm-row {
+        grid-template-columns: 1fr;
+    }
+}
